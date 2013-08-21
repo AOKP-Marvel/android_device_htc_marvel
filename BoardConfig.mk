@@ -30,9 +30,6 @@ TARGET_BOOTLOADER_BOARD_NAME := marvel
 TARGET_DEVICE := marvel
 TARGET_CPU_ABI := armeabi-v6l
 
-## Camera FC hack
-CAMERA_FC_HACK: true
-
 ### Compass
 BOARD_VENDOR_COMPASS_HARDWARE := akm8975
 
@@ -54,21 +51,3 @@ BOARD_CUSTOM_GRAPHICS := ../../../device/htc/msm7x27-common/recovery/graphics.c
 BOARD_USES_MMCUTILS := false
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_NO_MISC_PARTITION := true
-
-SMALLER_FONT_FOOTPRINT := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/marvel/bluetooth
-
-### Qcom GPS
-## this is moved to msm7x27-common temporarily
-#BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := marvel
-
-#### Old type of partition table ** as a reference
-# # cat /proc/mtd (marvel)
-#dev:    size   erasesize  name
-#mtd0: 00100000 00040000 "misc"
-#mtd1: 00500000 00040000 "recovery"
-#mtd2: 00340000 00040000 "boot"
-#mtd3: 10400000 00040000 "system"
-#mtd4: 02300000 00040000 "cache"
-#mtd5: 09600000 00040000 "userdata"
-#mtd6: 00a00000 00040000 "devlog"

@@ -18,10 +18,9 @@
 
 $(call inherit-product, build/target/product/full_base_telephony.mk)
 $(call inherit-product, build/target/product/languages_full.mk)
-
 $(call inherit-product, device/common/gps/gps_eu_supl.mk)
-
 $(call inherit-product, device/htc/msm7x27-common/msm7x27.mk)
+
 ## MDPI assets
 PRODUCT_AAPT_CONFIG := normal mdpi
 PRODUCT_AAPT_PREF_CONFIG := mdpi
