@@ -27,7 +27,8 @@
 TARGET_DISABLE_TRIPLE_BUFFERING := true
 
 TARGET_BOOTLOADER_BOARD_NAME := marvel
-TARGET_KERNEL_CONFIG := marvel_defconfig
+TARGET_DEVICE := marvel
+TARGET_CPU_ABI := armeabi-v6l
 
 ## Camera FC hack
 CAMERA_FC_HACK: true
