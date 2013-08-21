@@ -4,6 +4,6 @@ based on Andreas Schneider sources
 
 
 ==========
-Edit by OWL Project
+Edit by OWL Project (Kevinjoa for aokp)
 
 
