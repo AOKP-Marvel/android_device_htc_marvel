@@ -32,7 +32,7 @@ mobiledata.interfaces=rmnet0,rmnet1,rmnet2,gprs,ppp0
 wifi.interface=wlan0
 wifi.supplicant_scan_interval=180
 
-ro.sf.lcd_density=150
+ro.sf.lcd_density=160
 video.accelerate.hw=1
 debug.sf.no_hw_vsync=1
 debug.composition.type=gpu
@@ -54,6 +54,10 @@ settings.display.brightness=100
 ro.com.google.locationfeatures=0
 ro.setupwizard.enable_bypass=1
 
++# A-GPS
+ro.ril.def.agps.mode=2
+ro.ril.def.agps.feature=1
+
 # Dalvik
 dalvik.vm.lockprof.threshold=500
 dalvik.vm.dexopt-flags=m=y
@@ -73,6 +77,9 @@ ro.ril.avoid.pdp.overlap = 1
 
 # update the acoustic table for Buzz NEL lab testing
 ro.ril.update.acoustic.table = 1
+
+# Other
+pm.sleep_mode=1
 
 ###################
 # USB

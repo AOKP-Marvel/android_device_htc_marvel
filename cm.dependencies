@@ -1,4 +1,24 @@
+[
   {
-
-  }
+    "repository": "OWL-Predator-KERNEL",
+   "target_path": "kernel/htc/msm7x27",
+   "branch": "master"
+ }, {
+   "repository": "android_device_qcom_msm7x27",
+   "target_path": "device/qcom/msm7x27",
+   "branch": "cm-10.1"
+ }, {
+   "repository": "android_device_htc_msm7x27-common",
+   "target_path": "device/htc/msm7x27-common",
+   "branch": "master"
+ }, {
+   "repository": "android_vendor_htc",
+   "target_path": "vendor/htc",
+   "branch": "master"
+ }, {
+   "repository": "android_vendor_qcom_msm7x27",
+   "target_path": "vendor/qcom/msm7x27",
+   "branch": "master"
+ }
+]
 

@@ -23,9 +23,14 @@
 # inherit from common msm7x27
 -include device/htc/msm7x27-common/BoardConfigCommon.mk
 
+## Graphics
+TARGET_DISABLE_TRIPLE_BUFFERING := true
+
 TARGET_BOOTLOADER_BOARD_NAME := marvel
-TARGET_DEVICE := marvel
-TARGET_CPU_ABI := armeabi-v6l
+TARGET_KERNEL_CONFIG := marvel_defconfig
+
+## Camera FC hack
+CAMERA_FC_HACK: true
 
 ### Compass
 BOARD_VENDOR_COMPASS_HARDWARE := akm8975
@@ -48,6 +53,9 @@ BOARD_CUSTOM_GRAPHICS := ../../../device/htc/msm7x27-common/recovery/graphics.c
 BOARD_USES_MMCUTILS := false
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_NO_MISC_PARTITION := true
+
+SMALLER_FONT_FOOTPRINT := true
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/marvel/bluetooth
 
 ### Qcom GPS
 ## this is moved to msm7x27-common temporarily
